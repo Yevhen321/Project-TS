@@ -1,0 +1,36 @@
+@use '../../styles/colors.scss' as colors;
+@use '../../styles/fonts.scss' as fonts;
+
+.avatar {
+  background-color: map-get(colors.$color-orange, 'primary');
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.large {
+  width: 54px;
+  height: 54px;
+}
+
+.medium {
+  width: 40px;
+  height: 40px;
+  font-weight: map-get(fonts.$font-weight, 'medium');
+}
+
+.small {
+  width: 32px;
+  height: 32px;
+  font-weight: map-get(fonts.$font-weight, 'medium');
+}
+
+.white {
+  color: map-get(colors.$color-white, 'primary');
+}

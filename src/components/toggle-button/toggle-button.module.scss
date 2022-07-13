@@ -1,0 +1,40 @@
+@use '../../styles/colors.scss' as colors;
+
+.toggleWrapper {
+  position: relative;
+  width: 34px;
+  height: 16px;
+  border-radius: 10px;
+  background-color: map-get(colors.$color-gray, 'secondary');
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: map-get(colors.$color-white, 'primary');
+    transition: 0.5s;
+  }
+
+  &:checked::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: map-get(colors.$color-white, 'primary');
+    transition: 0.5s;
+  }
+
+  &:checked {
+    background-color: map-get(colors.$color-blue, 'primary');
+  }
+}

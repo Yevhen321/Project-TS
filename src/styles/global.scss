@@ -1,0 +1,21 @@
+* {
+  font-family: $font-family;
+  font-weight: map-get($font-weight, 'medium');
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 0;
+}
+
+// body {
+//   overflow: hidden;
+// }
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,20 @@
+.innerContainer {
+  padding: 20px 50px 40px 50px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+
+  .welcomeText {
+    text-align: center;
+  }
+
+  .input {
+    margin: 18px 0 10px 0;
+  }
+
+  .regTip {
+    text-align: center;
+  }
+}

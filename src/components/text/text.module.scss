@@ -1,0 +1,108 @@
+@use '../../styles/fonts.scss' as fonts;
+@use '../../styles/colors.scss' as colors;
+
+.h1 {
+  font-size: 34px;
+  line-height: 38px;
+  font-weight: map-get(fonts.$font-weight, 'bold');
+}
+
+.h2 {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: map-get(fonts.$font-weight, 'bold');
+}
+
+.h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: map-get(fonts.$font-weight, 'bold');
+}
+
+.h4 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: map-get(fonts.$font-weight, 'bold');
+}
+
+.h5 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: map-get(fonts.$font-weight, 'bold');
+}
+
+.h6 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: map-get(fonts.$font-weight, 'bold');
+}
+
+.p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: map-get(fonts.$font-weight, 'medium');
+}
+
+.label {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: map-get(fonts.$font-weight, 'regular');
+}
+
+.fontBold {
+  font-weight: map-get(fonts.$font-weight, 'bold');
+}
+
+.fontMedium {
+  font-weight: map-get(fonts.$font-weight, 'medium');
+}
+
+.fontRegular {
+  font-weight: map-get(fonts.$font-weight, 'regular');
+}
+
+.medium {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.small {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.white {
+  color: map-get(colors.$color-white, 'primary');
+}
+
+.black {
+  color: map-get(colors.$color-black, 'primary');
+}
+
+.blue {
+  color: map-get(colors.$color-blue, 'primary');
+}
+
+.gray {
+  color: map-get(colors.$color-gray, 'primary');
+}
+
+.secondaryGray {
+  color: map-get(colors.$color-gray, 'secondary');
+}
+
+.error {
+  color: map-get(colors.$color-red, 'primary');
+}
+
+.success {
+  color: map-get(colors.$color-green, 'primary');
+}
+
+.warning {
+  color: map-get(colors.$color-orange, 'primary');
+}
+
+.info {
+  color: map-get(colors.$color-blue, 'primary');
+}

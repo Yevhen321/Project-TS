@@ -1,0 +1,32 @@
+@use '../../styles/colors.scss' as colors;
+@use '../../styles/fonts.scss' as fonts;
+
+.wrapperCard {
+  width: 100%;
+  border-radius: 6px;
+  background-color: map-get(colors.$color-darkBlue, 'primary');
+  white-space: nowrap;
+  overflow: hidden;
+
+  .contentWrapper {
+    padding: 16px;
+
+    .badgeContent {
+      display: flex;
+      align-items: center;
+      margin-left: 5px;
+      margin-bottom: 18px;
+    }
+
+    .label {
+      color: map-get(colors.$color-gray, 'secondary');
+      margin: 0 0 6px 0;
+      display: block;
+    }
+
+    .role {
+      color: map-get(colors.$color-bg, 'primary');
+      margin: 0 0 14px 0;
+    }
+  }
+}

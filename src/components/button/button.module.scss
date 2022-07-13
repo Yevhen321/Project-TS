@@ -1,0 +1,142 @@
+@use '../../styles/colors.scss' as colors;
+@use '../../styles/fonts.scss' as fonts;
+
+.btn {
+  font-weight: map-get(fonts.$font-weight, 'bold');
+  border: 0;
+  border-radius: 4px;
+  gap: 10px;
+  line-height: 1;
+  display: inline-flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+
+  // div {
+  //   path {
+  //     stroke: inherit;
+  //     fill: inherit;
+  //   }
+  // }
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.small {
+  font-size: 14px;
+  line-height: 16px;
+  height: 34px;
+}
+.medium {
+  font-size: 14px;
+  line-height: 16px;
+  height: 40px;
+}
+.large {
+  font-size: 18px;
+  line-height: 20px;
+  height: 56px;
+}
+
+.primary {
+  color: map-get(colors.$color-white, 'primary');
+  background-color: map-get(colors.$color-blue, 'primary');
+  div {
+    stroke: map-get(colors.$color-white, 'primary');
+    fill: map-get(colors.$color-blue, 'primary');
+  }
+  &:hover {
+    background-color: map-get(colors.$color-blue, 'hoveredPrimary');
+    div {
+      fill: map-get(colors.$color-blue, 'hoveredPrimary');
+    }
+  }
+  &:active {
+    background-color: map-get(colors.$color-blue, 'pressedPrimary');
+    div {
+      fill: map-get(colors.$color-blue, 'pressedPrimary');
+    }
+  }
+  &:disabled {
+    background-color: map-get(colors.$color-gray, 'additional');
+    cursor: none;
+    pointer-events: none;
+    div {
+      fill: map-get(colors.$color-gray, 'additional');
+    }
+  }
+}
+
+.secondary {
+  color: map-get(colors.$color-blue, 'primary');
+  background-color: map-get(colors.$color-white, 'secondary');
+  div {
+    stroke: map-get(colors.$color-blue, 'primary');
+    fill: map-get(colors.$color-white, 'secondary');
+  }
+  &:hover {
+    color: map-get(colors.$color-white, 'primary');
+    background-color: map-get(colors.$color-blue, 'primary');
+    div {
+      stroke: map-get(colors.$color-white, 'primary');
+      fill: map-get(colors.$color-blue, 'primary');
+    }
+  }
+  &:active {
+    color: map-get(colors.$color-white, 'primary');
+    background-color: map-get(colors.$color-blue, 'pressedPrimary');
+    div {
+      stroke: map-get(colors.$color-white, 'primary');
+      fill: map-get(colors.$color-blue, 'primary');
+    }
+  }
+  &:disabled {
+    background-color: map-get(colors.$color-white, 'secondary');
+    color: map-get(colors.$color-blue, 'primary');
+    cursor: none;
+    pointer-events: none;
+    div {
+      stroke: map-get(colors.$color-blue, 'primary');
+      fill: map-get(colors.$color-white, 'secondary');
+    }
+  }
+}
+
+.outlined {
+  border: 1px solid map-get(colors.$color-blue, 'primary');
+  color: map-get(colors.$color-blue, 'primary');
+  background-color: map-get(colors.$color-white, 'primary');
+  div {
+    stroke: map-get(colors.$color-blue, 'primary');
+    fill: map-get(colors.$color-white, 'primary');
+  }
+  &:hover {
+    color: map-get(colors.$color-white, 'primary');
+    background-color: map-get(colors.$color-blue, 'primary');
+    div {
+      stroke: map-get(colors.$color-white, 'primary');
+      fill: map-get(colors.$color-blue, 'primary');
+    }
+  }
+  &:active {
+    color: map-get(colors.$color-blue, 'primary');
+    background-color: map-get(colors.$color-white, 'secondary');
+    div {
+      stroke: map-get(colors.$color-blue, 'primary');
+      fill: map-get(colors.$color-white, 'secondary');
+    }
+  }
+  &:disabled {
+    opacity: 0.8;
+    background-color: map-get(colors.$color-white, 'primary');
+    color: map-get(colors.$color-blue, 'primary');
+    cursor: none;
+    pointer-events: none;
+    div {
+      stroke: map-get(colors.$color-blue, 'primary');
+      fill: map-get(colors.$color-white, 'primary');
+    }
+  }
+}

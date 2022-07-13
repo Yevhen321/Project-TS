@@ -1,0 +1,33 @@
+@use '../../styles/colors.scss' as colors;
+
+.alertWrapper {
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+
+  .iconWrapper {
+    display: flex;
+    align-items: center;
+    padding: 9px 12px;
+  }
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.success {
+  background: rgba(3, 208, 135, 0.1);
+}
+
+.warning {
+  background: rgba(242, 153, 74, 0.1);
+}
+
+.error {
+  background: rgba(216, 32, 69, 0.1);
+}
+
+.info {
+  background: rgba(16, 168, 201, 0.1);
+}

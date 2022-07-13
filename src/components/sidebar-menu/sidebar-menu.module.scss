@@ -1,0 +1,14 @@
+@use '../../styles/colors.scss' as colors;
+
+.itemWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 20px;
+
+  .text {
+    &:hover {
+      color: map-get(colors.$color-blue, 'primary');
+    }
+  }
+}

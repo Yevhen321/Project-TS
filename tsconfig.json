@@ -1,11 +1,9 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["DOM", "dom.iterable", "esnext", "ES2017"],
+    "types": ["resize-observer-browser"],
+    "noImplicitAny": false,
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -18,9 +16,18 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "paths": {
+      "style/*": ["./src/style/*"]
+    }
   },
   "include": [
-    "src"
+    "./src/**/*.tsx",
+    "./src/**/*.ts",
+    "./typings/*.ts",
+    "declarations.d.ts",
+    "src",
+    "src/components",
+    "src/custom.d.ts"
   ]
 }
