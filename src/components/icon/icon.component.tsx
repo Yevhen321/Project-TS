@@ -15,11 +15,14 @@ export const SvgIconComponent: React.FC<IconProps> = ({
 }) => {
   return (
     <ReactSVG
-      src={`./assets/icons/${name}.svg`}
+      data-testid="icon-test"
+      src={`/assets/icons/${name}.svg`}
       style={style}
       onClick={onClick}
       className={clsx(classes.icon, className)}
       color={stroke}
+      // wrapper="svg"
+      httpRequestWithCredentials={true}
       beforeInjection={(svg) => {
         svg.classList.add('svg-class-name');
         svg.setAttribute(

@@ -5,15 +5,12 @@ import { CheckboxGroupProps } from './checkbox-group.types';
 export const CheckboxGroupComponent: React.FC<CheckboxGroupProps> = ({
   options,
   value,
-  label,
-  checked,
   disabled,
   onChange,
 }) => {
   const [localValue, setLocalValue] = useState(value);
 
   const has = (v: string | number) => localValue.split(',').includes(String(v));
-
   const handleOnchageChecboxItem = (value: string, checked: boolean) => {
     let v = '';
     if (checked) {
@@ -29,7 +26,7 @@ export const CheckboxGroupComponent: React.FC<CheckboxGroupProps> = ({
   };
 
   return (
-    <div>
+    <div data-testid="checkbox-group-test">
       {options?.map((o) => (
         <Checkbox
           key={o.text}

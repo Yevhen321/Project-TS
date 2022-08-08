@@ -1,5 +1,6 @@
 import React from 'react';
 import { cleanup, fireEvent, render, screen } from '@testing-library/react';
+import { act } from 'react-dom/test-utils';
 import '@testing-library/jest-dom';
 import { DatePicker } from '.';
 
@@ -7,12 +8,17 @@ afterEach(cleanup);
 
 describe('DatePicker Component', () => {
   it('date-picker click and change the date', () => {
-    render(<DatePicker />);
+    // eslint-disable-next-line testing-library/no-unnecessary-act
+    act(() => {
+      render(<DatePicker />);
+    });
     const datePicker = screen.getByDisplayValue(
-      '2022/07/13'
+      new Date().toISOString().split('T')[0].replace(/-/g, '/')
     ) as HTMLInputElement;
-    fireEvent.click(datePicker);
-    fireEvent.change(datePicker, { target: { value: '2022/07/14' } });
+    // eslint-disable-next-line testing-library/no-unnecessary-act
+    act(() => {
+      fireEvent.change(datePicker, { target: { value: '2022/07/14' } });
+    });
     expect(datePicker.value).toBe('2022/07/14');
   });
 });

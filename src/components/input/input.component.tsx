@@ -92,6 +92,7 @@ export const InputComponent = forwardRef<HTMLInputElement, InputProps>(
             name={label}
             value={value}
             style={style}
+            data-testid="input"
             onChange={(event) =>
               onChange && onChange(event.target.value, event)
             }

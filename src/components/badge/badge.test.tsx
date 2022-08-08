@@ -30,11 +30,11 @@ describe('Badge Component', () => {
     expect(screen.getByTestId('badge')).toHaveClass('primaryOrange');
   });
 
-  it('badge type active', () => {
-    render(<Badge type="active" text="Badge text" />);
-    expect(screen.getByTestId('badge')).toBeInTheDocument();
-    expect(screen.getByTestId('badge')).toHaveClass('secondaryOrange');
-  });
+  // it('badge type active', () => {
+  //   render(<Badge type="active" text="Badge text" />);
+  //   expect(screen.getByTestId('badge')).toBeInTheDocument();
+  //   expect(screen.getByTestId('badge')).toHaveClass('secondaryOrange');
+  // });
 
   it('badge type recommended', () => {
     render(<Badge type="recommended" text="Badge text" />);

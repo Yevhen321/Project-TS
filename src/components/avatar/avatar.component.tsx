@@ -4,13 +4,14 @@ import classes from './avatar.module.scss';
 import clsx from 'clsx';
 
 export const AvatarComponent: React.FC<AvatarProps> = ({
-  size = 'medium',
+  size,
   name,
   surname,
   image,
 }) => {
   return (
     <div
+      data-testid="avatar"
       className={clsx(
         classes.avatar,
         classes.white,

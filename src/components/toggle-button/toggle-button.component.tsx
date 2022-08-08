@@ -8,6 +8,7 @@ export const ToggleButtonComponent: React.FC<ToggleButtonProps> = ({
 }) => {
   return (
     <input
+      data-testid="toggle-btn"
       type="checkbox"
       className={classes.toggleWrapper}
       checked={toggled}

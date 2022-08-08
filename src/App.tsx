@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import { Icon } from './components/icon';
+import { RadioButton } from './components/radio-button';
 import { Login } from './pages/login';
 
+const data = [
+  { text: 'all', value: 'All' },
+  { text: 'other', value: 'Other' },
+];
+
 export const App = () => {
+  const [state, setState] = useState(false);
+
   return (
     <>
       <Routes>

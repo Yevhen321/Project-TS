@@ -10,7 +10,10 @@ export type InputWrapperProps = Omit<InputProps, 'onChange'> & {
 
 export const InputWrapper = forwardRef<HTMLInputElement, InputWrapperProps>(
   ({ onChange, ...props }, ref) => {
-    const inputOnChange = (v: string, event: any) => {
+    const inputOnChange = (
+      v: string,
+      event: React.ChangeEvent<HTMLInputElement> | undefined
+    ) => {
       onChange && onChange(event);
     };
 

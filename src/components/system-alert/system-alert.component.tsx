@@ -13,6 +13,7 @@ export const SystemAlertComponent: React.FC<SystemAlertProps> = ({
 }) => {
   return (
     <div
+      data-testid="system-alert"
       className={clsx(
         classes.alertWrapper,
         type === 'success'
