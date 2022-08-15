@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Icon } from '../icon';
 import { Text } from '../text';
 import { MenuItem } from './sidebar-menu.types';
@@ -11,13 +12,14 @@ export const SidebarMenuItemComponent: React.FC<MenuItem> = ({
   path,
   collapsed,
 }) => {
+  const { t } = useTranslation('common');
   return (
     <div className={classes.itemWrapper}>
       <Icon name={icon} size={25} fill="none" stroke="#9CA4B3" />
       {!collapsed && (
         <Link to={path}>
           <Text
-            text={name}
+            text={t(`COMMON.${name.toUpperCase()}`)}
             color="gray"
             size="medium"
             weight="fontBold"

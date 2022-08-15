@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import clsx from 'clsx';
 import classes from './sidebar.module.scss';
 import { SidebarProps } from './sidebar.types';
@@ -9,12 +10,11 @@ import { Button } from '../button';
 import { SidebarMenu } from '../sidebar-menu';
 import { ProfileCard } from '../profile-card';
 import { LanguageSelect } from '../language-select';
+import { menuItems } from './sidebar.constants';
 
-export const SidebarComponent: React.FC<SidebarProps> = ({
-  menuItems,
-  userInfo,
-}) => {
+export const SidebarComponent: React.FC<SidebarProps> = ({ userInfo }) => {
   const [collapsed, setCollapsed] = useState<boolean>(false);
+  const { t } = useTranslation();
   return (
     <div
       className={clsx(
@@ -63,7 +63,7 @@ export const SidebarComponent: React.FC<SidebarProps> = ({
           <Button
             variant="primary"
             size="large"
-            text={collapsed ? '' : 'New Project'}
+            text={collapsed ? '' : t('COMMON.NEW_PROJECT', { ns: 'common' })}
             width="full"
             icon={{
               name: IconTypes.PLUS,

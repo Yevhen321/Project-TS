@@ -42,7 +42,8 @@
     "test": "react-scripts test --coverage --watchAll",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "test-storybook": "test-storybook"
   },
   "prettier": {
     "singleQuote": true
@@ -71,6 +72,7 @@
     "@storybook/node-logger": "^6.5.6",
     "@storybook/preset-create-react-app": "^4.1.2",
     "@storybook/react": "^6.5.6",
+    "@storybook/test-runner": "^0.5.0",
     "@storybook/testing-library": "^0.0.11",
     "@testing-library/react": "^13.3.0",
     "@types/react-datepicker": "^4.4.2",
@@ -88,7 +90,7 @@
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",
     "eslint-plugin-storybook": "^0.5.12",
-    "jest": "^28.1.1",
+    "jest": "^27.5.1",
     "prettier": "^2.6.2",
     "prop-types": "^15.8.1",
     "react-test-renderer": "^18.1.0",

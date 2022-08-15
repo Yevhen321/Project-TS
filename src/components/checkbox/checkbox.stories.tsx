@@ -12,8 +12,8 @@ const Template: ComponentStory<typeof Checkbox> = (args) => (
   <Checkbox {...args} />
 );
 
-export const CheckboxVariant = Template.bind({});
+export const CheckboxStory = Template.bind({});
 
-CheckboxVariant.args = {
-  value: 'Checkbox Caption Text',
+CheckboxStory.args = {
+  value: 'Checkbox story Text',
 };

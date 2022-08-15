@@ -13,8 +13,8 @@ const Template: ComponentStory<typeof ToggleButton> = (args) => {
   return <ToggleButton {...args} onChange={() => setToggle(!toggle)} />;
 };
 
-export const Primary = Template.bind({});
+export const ToggleButtonStory = Template.bind({});
 
-Primary.args = {
+ToggleButtonStory.args = {
   toggled: true,
 };

@@ -1,8 +1,7 @@
 import React from 'react';
-import { DropDownOptions, DropDownSelect } from '.';
+import { DropDownSelect } from '.';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { options } from '../../data/drop-down-options';
-import { PropsValue } from 'react-select';
 
 export default {
   title: 'Components / DropDownSelect',
@@ -11,17 +10,12 @@ export default {
 } as ComponentMeta<typeof DropDownSelect>;
 
 const Template: ComponentStory<typeof DropDownSelect> = (args) => {
-  const [value, setValue] = React.useState<
-    PropsValue<DropDownOptions> | undefined
-  >();
-  return (
-    <DropDownSelect {...args} value={value} onChange={(val) => setValue(val)} />
-  );
+  return <DropDownSelect {...args} />;
 };
 
-export const VariantDropDownSelect = Template.bind({});
+export const DropDownSelectStory = Template.bind({});
 
-VariantDropDownSelect.args = {
+DropDownSelectStory.args = {
   options: options,
   isRtl: false,
   isDisabled: false,

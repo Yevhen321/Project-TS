@@ -22,16 +22,8 @@ export const ButtonComponent: React.FC<ButtonProps> = ({
       className={clsx(
         classes.btn,
         className,
-        size === 'small'
-          ? classes.small
-          : size === 'medium'
-          ? classes.medium
-          : size === 'large' && classes.large,
-        variant === 'secondary'
-          ? classes.secondary
-          : variant === 'outlined'
-          ? classes.outlined
-          : variant === 'primary' && classes.primary,
+        classes[size],
+        classes[variant],
         width === 'full' ? classes.fullWidth : ''
       )}
       disabled={disabled}

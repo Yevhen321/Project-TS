@@ -3,6 +3,7 @@ import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { Button } from '.';
 import { IconTypes } from '../../data/icons';
+import { VariantButton } from './button.stories';
 
 afterEach(cleanup);
 
@@ -47,5 +48,10 @@ describe('Button Component', () => {
   it('test button width', () => {
     render(<Button text="Click Me" width="full" />);
     expect(screen.getByRole('button')).toHaveClass('fullWidth');
+  });
+
+  it('test VariantButton from storybook', () => {
+    render(<VariantButton text="My button" {...VariantButton.args} />);
+    expect(screen.getByRole('button')).toHaveTextContent(/my button/i);
   });
 });

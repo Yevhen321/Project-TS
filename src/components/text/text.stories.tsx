@@ -17,10 +17,10 @@ export default {
 
 const Template: ComponentStory<typeof Text> = (args) => <Text {...args} />;
 
-export const TextVariant = Template.bind({});
+export const TextStory = Template.bind({});
 
-TextVariant.args = {
+TextStory.args = {
   variant: 'h1',
-  text: 'This is my text',
+  text: 'Storybook',
   size: 'medium',
 };

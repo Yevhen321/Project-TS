@@ -25,8 +25,8 @@ const Template: ComponentStory<typeof SystemAlert> = (args) => (
   <SystemAlert {...args} />
 );
 
-export const SystemAlertVariant = Template.bind({});
+export const SystemAlertStory = Template.bind({});
 
-SystemAlertVariant.args = {
+SystemAlertStory.args = {
   type: 'success',
 };

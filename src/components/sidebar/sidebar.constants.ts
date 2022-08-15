@@ -1,5 +1,5 @@
-import { MenuItem } from '../components/sidebar-menu';
-import { IconTypes } from './icons';
+import { MenuItem } from '../sidebar-menu';
+import { IconTypes } from '../../data/icons';
 
 export const menuItems: MenuItem[] = [
   {

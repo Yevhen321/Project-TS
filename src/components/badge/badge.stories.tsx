@@ -27,9 +27,9 @@ export default {
 
 const Template: ComponentStory<typeof Badge> = (args) => <Badge {...args} />;
 
-export const VariantBadge = Template.bind({});
+export const BadgeStory = Template.bind({});
 
-VariantBadge.args = {
+BadgeStory.args = {
   text: 'Badge Text',
   type: 'new',
 };

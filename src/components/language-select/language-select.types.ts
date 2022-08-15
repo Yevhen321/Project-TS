@@ -1,6 +1,9 @@
-import React from 'react';
+export type LanguageItems = {
+  title: string;
+  lng: string;
+};
 
 export interface LanguageSelectProps {
-  options?: string;
+  options?: LanguageItems[];
   className?: string;
 }

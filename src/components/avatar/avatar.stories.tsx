@@ -17,9 +17,9 @@ export default {
 
 const Template: ComponentStory<typeof Avatar> = (args) => <Avatar {...args} />;
 
-export const VariantAvatar = Template.bind({});
+export const AvatarStory = Template.bind({});
 
-VariantAvatar.args = {
+AvatarStory.args = {
   name: 'Denis',
   surname: 'Tymchenko',
   size: 'medium',

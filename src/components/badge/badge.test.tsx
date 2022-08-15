@@ -2,6 +2,7 @@ import React from 'react';
 import { render, screen, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { Badge } from '.';
+import { BadgeStory } from './badge.stories';
 
 afterEach(cleanup);
 
@@ -29,12 +30,6 @@ describe('Badge Component', () => {
     expect(screen.getByTestId('badge')).toBeInTheDocument();
     expect(screen.getByTestId('badge')).toHaveClass('primaryOrange');
   });
-
-  // it('badge type active', () => {
-  //   render(<Badge type="active" text="Badge text" />);
-  //   expect(screen.getByTestId('badge')).toBeInTheDocument();
-  //   expect(screen.getByTestId('badge')).toHaveClass('secondaryOrange');
-  // });
 
   it('badge type recommended', () => {
     render(<Badge type="recommended" text="Badge text" />);
@@ -64,5 +59,13 @@ describe('Badge Component', () => {
     render(<Badge type="opposite" text="Badge text" />);
     expect(screen.getByTestId('badge')).toBeInTheDocument();
     expect(screen.getByTestId('badge')).toHaveClass('opposite');
+  });
+
+  it('badge storybook', () => {
+    render(
+      <BadgeStory type="opposite" text="Badge text" {...BadgeStory.args} />
+    );
+    expect(screen.getByTestId('badge')).toBeInTheDocument();
+    expect(screen.getByTestId('badge')).toHaveTextContent(/badge text/i);
   });
 });
