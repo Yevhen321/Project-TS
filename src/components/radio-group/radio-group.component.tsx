@@ -20,7 +20,7 @@ export const RadioGroupComponent: React.FC<RadioGroupProps> = ({
   };
   return (
     <div>
-      {options?.map((o) => (
+      {options?.map(o => (
         <RadioButton
           key={o.value}
           name={o.text}
