@@ -27,9 +27,9 @@ export const RadioButtonComponent: React.FC<RadioButtonProps> = ({
           className={clsx(classes.circle, checked ? '' : classes.radioClicked)}
         ></div>
       </div>
-      {label && <Text variant="h6" text={label} />}
+      {label && <Text variant='h6' text={label} />}
       <input
-        type="radio"
+        type='radio'
         className={classes.radioInput}
         id={id}
         onChange={() => onChange(checked, value, label)}

@@ -38,15 +38,17 @@ export const CurrencyComponent: React.FC<CurrencyProps> = ({
       leftLabel={leftLabel}
       width={width}
       icon={{ name: currency as IconTypes, size: 14 }}
-      onChange={(e) => onChange && onChange(e.target.value, e)}
+      onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+        onChange && onChange(e.target.value, e)
+      }
       thousandsGroupStyle={thousandsGroupStyle}
       thousandSeparator={thousandSeparator}
       isNumericString={true}
       value={value}
       decimalSeparator={decimalSeparator}
       decimalScale={2}
-      displayType="input"
-      type="text"
+      displayType='input'
+      type='text'
       allowNegative={allowNegative}
     />
   );

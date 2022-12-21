@@ -18,7 +18,5 @@ describe('Icon Component', () => {
     // ['svg-class-name'].map((svg) => mock(svg));
     // expect(mock).toHaveBeenCalledTimes(1);
     // expect(mock).toHaveBeenCalledWith('svg-class-name');
-    // eslint-disable-next-line testing-library/no-debugging-utils
-    screen.debug();
   });
 });

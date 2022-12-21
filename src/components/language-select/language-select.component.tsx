@@ -18,29 +18,29 @@ export const LanguageSelectComponent: React.FC<LanguageSelectProps> = () => {
   };
 
   return (
-    <div className={classes.languageHelp} data-testid="language-select">
+    <div className={classes.languageHelp} data-testid='language-select'>
       <div className={classes.language}>
         <Text
           text={language}
-          size="small"
-          color="secondaryGray"
-          weight="fontMedium"
+          size='small'
+          color='secondaryGray'
+          weight='fontMedium'
         />
         <Icon
           name={showList ? IconTypes.ARROW_UP : IconTypes.ARROW_DOWN}
           size={24}
-          fill="none"
-          stroke="#10A8C9"
+          fill='none'
+          stroke='#10A8C9'
           onClick={() => setShowList(!showList)}
           className={classes.icon}
         />
       </div>
       <div>
         <Text
-          text="Help"
-          size="small"
-          color="secondaryGray"
-          weight="fontMedium"
+          text='Help'
+          size='small'
+          color='secondaryGray'
+          weight='fontMedium'
           style={{ cursor: 'pointer' }}
         />
       </div>
@@ -51,9 +51,9 @@ export const LanguageSelectComponent: React.FC<LanguageSelectProps> = () => {
               <li key={lng}>
                 <Text
                   text={title}
-                  size="small"
-                  color="secondaryGray"
-                  weight="fontMedium"
+                  size='small'
+                  color='secondaryGray'
+                  weight='fontMedium'
                   style={{ cursor: 'pointer' }}
                   onClick={() => {
                     setLanguage(title);

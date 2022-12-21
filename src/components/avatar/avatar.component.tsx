@@ -11,7 +11,7 @@ export const AvatarComponent: React.FC<AvatarProps> = ({
 }) => {
   return (
     <div
-      data-testid="avatar"
+      data-testid='avatar'
       className={clsx(
         classes.avatar,
         classes.white,

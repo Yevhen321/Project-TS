@@ -15,7 +15,7 @@ export const SvgIconComponent: React.FC<IconProps> = ({
 }) => {
   return (
     <ReactSVG
-      data-testid="icon-test"
+      data-testid='icon-test'
       src={`/assets/icons/${name}.svg`}
       style={style}
       onClick={onClick}

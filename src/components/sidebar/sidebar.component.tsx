@@ -36,18 +36,18 @@ export const SidebarComponent: React.FC<SidebarProps> = ({ userInfo }) => {
           }}
         >
           {!collapsed && (
-            <Link to="/" className={classes.logo}>
+            <Link to='/' className={classes.logo}>
               <img
-                src="https://images.unsplash.com/photo-1655359591190-236264b18d2a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                alt="logo"
+                src='https://images.unsplash.com/photo-1655359591190-236264b18d2a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
+                alt='logo'
               />
             </Link>
           )}
           <Icon
             name={collapsed ? IconTypes.ARROW_LEFT : IconTypes.ARROW_RIGHT}
             size={34}
-            fill="none"
-            stroke="#10A8C9"
+            fill='none'
+            stroke='#10A8C9'
             onClick={() => setCollapsed(!collapsed)}
             style={{ cursor: 'pointer' }}
           />
@@ -61,10 +61,10 @@ export const SidebarComponent: React.FC<SidebarProps> = ({ userInfo }) => {
           )}
         >
           <Button
-            variant="primary"
-            size="large"
+            variant='primary'
+            size='large'
             text={collapsed ? '' : t('COMMON.NEW_PROJECT', { ns: 'common' })}
-            width="full"
+            width='full'
             icon={{
               name: IconTypes.PLUS,
               size: 32,

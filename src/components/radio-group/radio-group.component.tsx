@@ -5,7 +5,6 @@ import { RadioGroupProps } from './radio-group.types';
 export const RadioGroupComponent: React.FC<RadioGroupProps> = ({
   onChange,
   value,
-  label,
   options,
 }) => {
   const [selectedValue, setSelectedValue] = useState<string>('');

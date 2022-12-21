@@ -1,3 +1,4 @@
+/* eslint-disable testing-library/no-debugging-utils */
 import React from 'react';
 import { cleanup, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';

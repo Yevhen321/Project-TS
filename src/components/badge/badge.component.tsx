@@ -7,7 +7,7 @@ import { Text } from '../text';
 export const BadgeComponent: React.FC<BadgeProps> = ({ type, text }) => {
   return (
     <div
-      data-testid="badge"
+      data-testid='badge'
       className={clsx(
         classes.badgeWrapper,
         type === 'new'
@@ -31,7 +31,7 @@ export const BadgeComponent: React.FC<BadgeProps> = ({ type, text }) => {
           : ''
       )}
     >
-      <Text variant="label" text={text.toUpperCase()}></Text>
+      <Text variant='label' text={text.toUpperCase()}></Text>
     </div>
   );
 };

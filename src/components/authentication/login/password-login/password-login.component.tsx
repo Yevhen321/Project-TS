@@ -47,17 +47,17 @@ export const PasswordLoginComponent: React.FC<PasswordLoginProps> = ({
       <div className={classes.innerContainer}>
         <div className={classes.back} onClick={() => setStep('enter-email')}>
           <Icon name={IconTypes.BACK} size={24} className={classes.icon} />
-          <Text text="Back" color="secondaryGray" variant="p" />
+          <Text text='Back' color='secondaryGray' variant='p' />
         </div>
         <div className={classes.enterPassword}>
-          <Text text="Enter password" variant="h3" />
+          <Text text='Enter password' variant='h3' />
         </div>
         <div className={classes.emailStateContainer}>
           <Text
             text={emailState ? emailState : 'email'}
-            size="medium"
-            weight="fontBold"
-            color="gray"
+            size='medium'
+            weight='fontBold'
+            color='gray'
           />
           <Icon
             name={IconTypes.X}
@@ -67,8 +67,8 @@ export const PasswordLoginComponent: React.FC<PasswordLoginProps> = ({
           />
         </div>
         <InputPassword
-          label="Enter password"
-          width="full"
+          label='Enter password'
+          width='full'
           showError={showError}
           errorMessage={errorMessage}
           value={password}
@@ -81,15 +81,15 @@ export const PasswordLoginComponent: React.FC<PasswordLoginProps> = ({
           }}
         />
         <Button
-          text="Enter"
-          width="full"
+          text='Enter'
+          width='full'
           disabled={hasError}
           onClick={handleClick}
         />
         <div className={classes.regTip}>
-          <Text text="Forgot password?" variant="p" color="secondaryGray" />
-          <Link to="#" style={{ textDecoration: 'underline' }}>
-            <Text text="Restore password" variant="p" color="blue" />
+          <Text text='Forgot password?' variant='p' color='secondaryGray' />
+          <Link to='#' style={{ textDecoration: 'underline' }}>
+            <Text text='Restore password' variant='p' color='blue' />
           </Link>
         </div>
       </div>

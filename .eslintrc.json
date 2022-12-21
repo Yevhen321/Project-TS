@@ -45,6 +45,7 @@
       }
     ],
     "no-console": 1,
-    "no-unused-vars": 1
+    "no-else-return": "warn",
+    "no-unused-vars": ["warn", { "varsIgnorePattern": "^[A-Z]" }]
   }
 }

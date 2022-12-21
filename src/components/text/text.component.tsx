@@ -44,7 +44,7 @@ export const TextComponent: React.FC<TextProps> = ({
       case 'label':
         return <label {...properties}>{text}</label>;
       default:
-        break;
+        return 'h5';
     }
   };
   return <>{rendering()}</>;

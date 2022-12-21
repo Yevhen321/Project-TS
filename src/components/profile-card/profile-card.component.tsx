@@ -15,31 +15,31 @@ export const ProfileCardComponent: React.FC<ProfileCardProps> = ({
         <div className={classes.wrapperCard}>
           <div className={classes.contentWrapper}>
             <div className={classes.badgeContent}>
-              <Avatar size="large" name={name} surname={surname} />
+              <Avatar size='large' name={name} surname={surname} />
               <div>
                 <Text
-                  variant="h4"
+                  variant='h4'
                   text={`${name} ${surname}`}
-                  color="white"
+                  color='white'
                   style={{ margin: '0 0 6px 10px' }}
                 />
                 <Text
-                  variant="label"
+                  variant='label'
                   text={`${email}`}
                   style={{ color: '#9ca4b3', marginLeft: '10px' }}
                 />
               </div>
             </div>
             <div>
-              <Text variant="label" text="Position" className={classes.label} />
-              <Text variant="p" text={`${position}`} className={classes.role} />
+              <Text variant='label' text='Position' className={classes.label} />
+              <Text variant='p' text={`${position}`} className={classes.role} />
               <Text
-                variant="label"
-                text="Group Name"
+                variant='label'
+                text='Group Name'
                 className={classes.label}
               />
               <Text
-                variant="p"
+                variant='p'
                 text={`${groupName}`}
                 className={classes.role}
               />
@@ -48,7 +48,7 @@ export const ProfileCardComponent: React.FC<ProfileCardProps> = ({
         </div>
       ) : (
         <div>
-          <Avatar size="large" name={name} surname={surname} />
+          <Avatar size='large' name={name} surname={surname} />
         </div>
       )}
     </>

@@ -26,7 +26,7 @@ export const CheckboxGroupComponent: React.FC<CheckboxGroupProps> = ({
   };
 
   return (
-    <div data-testid="checkbox-group-test">
+    <div data-testid='checkbox-group-test'>
       {options?.map((o) => (
         <Checkbox
           key={o.text}

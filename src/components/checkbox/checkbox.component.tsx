@@ -15,7 +15,7 @@ export const CheckboxComponent: React.FC<CheckboxProps> = ({
   return (
     <div className={classes.checkboxWrapper}>
       <input
-        type="checkbox"
+        type='checkbox'
         id={id}
         name={name}
         value={id}
@@ -24,7 +24,7 @@ export const CheckboxComponent: React.FC<CheckboxProps> = ({
         onChange={(e) => onChange && onChange(value, e.target.checked)}
         disabled={disabled}
       />
-      {value && <Text text={value} variant="h6" color="gray" />}
+      {value && <Text text={value} variant='h6' color='gray' />}
     </div>
   );
 };

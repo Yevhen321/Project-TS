@@ -41,11 +41,11 @@ export const EmailLoginComponent: React.FC<EmailLoginProps> = ({ setStep }) => {
     <>
       <div className={classes.innerContainer}>
         <div className={classes.welcomeText}>
-          <Text text="Welcome to the HIKVISION selection system" variant="h4" />
+          <Text text='Welcome to the HIKVISION selection system' variant='h4' />
         </div>
         <Input
-          label="Enter e-mail"
-          width="full"
+          label='Enter e-mail'
+          width='full'
           className={classes.input}
           value={email}
           showError={showError}
@@ -59,15 +59,15 @@ export const EmailLoginComponent: React.FC<EmailLoginProps> = ({ setStep }) => {
           onKeyDown={() => handleEmailKeyDown(email)}
         />
         <Button
-          text="Next"
-          width="full"
+          text='Next'
+          width='full'
           disabled={hasError}
           onClick={handleClick}
         />
         <div className={classes.regTip}>
-          <Text text="Not registered yet?" variant="p" color="secondaryGray" />
-          <Link to="#" style={{ textDecoration: 'underline' }}>
-            <Text text="Leave request" variant="p" color="blue" />
+          <Text text='Not registered yet?' variant='p' color='secondaryGray' />
+          <Link to='#' style={{ textDecoration: 'underline' }}>
+            <Text text='Leave request' variant='p' color='blue' />
           </Link>
         </div>
       </div>

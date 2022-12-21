@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <Provider store={store}>
     <BrowserRouter>
-      <Suspense fallback="Loading....">
+      <Suspense fallback='Loading....'>
         <App />
       </Suspense>
     </BrowserRouter>

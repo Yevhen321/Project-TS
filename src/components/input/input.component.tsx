@@ -66,7 +66,7 @@ export const InputComponent = forwardRef<HTMLInputElement, InputProps>(
     return (
       <div className={clsx(classes.wrapper)}>
         {leftLabel && (
-          <Text variant="p" text={leftLabel} style={{ marginRight: '10px' }} />
+          <Text variant='p' text={leftLabel} style={{ marginRight: '10px' }} />
         )}
         <div
           className={clsx(
@@ -92,7 +92,7 @@ export const InputComponent = forwardRef<HTMLInputElement, InputProps>(
             name={label}
             value={value}
             style={style}
-            data-testid="input"
+            data-testid='input'
             onChange={(event) =>
               onChange && onChange(event.target.value, event)
             }
@@ -110,7 +110,7 @@ export const InputComponent = forwardRef<HTMLInputElement, InputProps>(
           {icon && <Icon {...icon} />}
         </div>
         {errorMessage && showError && (
-          <Text variant="p" size="medium" color="error" text={errorMessage} />
+          <Text variant='p' size='medium' color='error' text={errorMessage} />
         )}
       </div>
     );

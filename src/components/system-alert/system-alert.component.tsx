@@ -13,7 +13,7 @@ export const SystemAlertComponent: React.FC<SystemAlertProps> = ({
 }) => {
   return (
     <div
-      data-testid="system-alert"
+      data-testid='system-alert'
       className={clsx(
         classes.alertWrapper,
         type === 'success'
@@ -61,7 +61,7 @@ export const SystemAlertComponent: React.FC<SystemAlertProps> = ({
             ? 'Error: '
             : 'Info: '
         } ${message}`}
-        variant="h6"
+        variant='h6'
         color={type}
       />
     </div>

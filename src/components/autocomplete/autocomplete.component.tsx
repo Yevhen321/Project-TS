@@ -44,14 +44,13 @@ export const AutocompleteComponent: React.FC<AutocompleteProps> = ({
       <Input
         onChange={debounceOnchange}
         value={value}
-        type="text"
+        type='text'
         icon={{
           name:
             filteredOptions.length > 0
               ? IconTypes.ARROW_DOWN
               : IconTypes.ARROW_UP,
           size: 24,
-          onClick: () => () => console.log('das'),
         }}
         width={width}
         onFocus={() => setIsShown(true)}
@@ -77,7 +76,7 @@ export const AutocompleteComponent: React.FC<AutocompleteProps> = ({
                     <Text
                       key={o.value}
                       text={o.text}
-                      variant="h6"
+                      variant='h6'
                       onClick={() => {
                         onChange && onChange(o.value);
                         // @ts-ignore

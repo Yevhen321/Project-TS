@@ -20,7 +20,6 @@ export const App = () => {
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
   };
-
   return (
     <>
       <Button

@@ -1,7 +1,6 @@
 @use '../../styles/colors.scss' as colors;
 
 .menu {
-  // width: 100%;
   border: 1px solid map-get(colors.$color-gray, 'additional');
   margin-top: 5px;
   border-radius: 8px;

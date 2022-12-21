@@ -45,9 +45,6 @@
     "build-storybook": "build-storybook -s public",
     "test-storybook": "test-storybook"
   },
-  "prettier": {
-    "singleQuote": true
-  },
   "browserslist": {
     "production": [
       ">0.2%",

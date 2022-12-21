@@ -15,14 +15,14 @@ export const SidebarMenuItemComponent: React.FC<MenuItem> = ({
   const { t } = useTranslation('common');
   return (
     <div className={classes.itemWrapper}>
-      <Icon name={icon} size={25} fill="none" stroke="#9CA4B3" />
+      <Icon name={icon} size={25} fill='none' stroke='#9CA4B3' />
       {!collapsed && (
         <Link to={path}>
           <Text
             text={t(`COMMON.${name.toUpperCase()}`)}
-            color="gray"
-            size="medium"
-            weight="fontBold"
+            color='gray'
+            size='medium'
+            weight='fontBold'
             className={classes.text}
           />
         </Link>
