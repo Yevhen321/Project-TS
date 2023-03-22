@@ -9,7 +9,7 @@ import { lngs } from './language-select.constants';
 
 export const LanguageSelectComponent: React.FC<LanguageSelectProps> = () => {
   const [showList, setShowList] = useState<boolean>(false);
-  const [language, setLanguage] = useState('English');
+  const [language, setLanguage] = useState<string>('English');
 
   const { i18n } = useTranslation();
 

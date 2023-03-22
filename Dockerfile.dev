@@ -1,8 +1,7 @@
-FROM node
-# WORKDIR /project_shop_alex
+FROM node:latest
+WORKDIR /project_shop_alex
 COPY package.json .
 RUN npm install
-COPY . .
 # ENV REACT_APP_NAME=myName
-EXPOSE 3000
 CMD ["npm", "start"]
+EXPOSE 3000

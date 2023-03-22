@@ -8,6 +8,7 @@ export const RadioGroupComponent: React.FC<RadioGroupProps> = ({
   options,
 }) => {
   const [selectedValue, setSelectedValue] = useState<string>('');
+
   useEffect(() => {
     setSelectedValue(value);
   }, [value]);
@@ -18,9 +19,10 @@ export const RadioGroupComponent: React.FC<RadioGroupProps> = ({
       onChange && onChange(v, text);
     }
   };
+
   return (
     <div>
-      {options?.map(o => (
+      {options?.map((o) => (
         <RadioButton
           key={o.value}
           name={o.text}
